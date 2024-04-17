@@ -1,0 +1,14 @@
+.flexbox-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: #92d7ee;
+
+}
+
+footer{
+    background-color: #92d7ee;
+}

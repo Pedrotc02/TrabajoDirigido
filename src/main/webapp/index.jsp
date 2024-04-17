@@ -44,9 +44,6 @@ Time: 20:49
                     de cada vehículo que requiera atención en el taller.
                     </p>
                     <img src="<c:url value="/images/taller.jpg" />" alt="Taller" class="foto" />
-                    <p class="lead">
-                        <a href="${pageContext.request.contextPath}/Usuario/registrarUsuario" class="btn btn-lg btn-light fw-bold border-white bg-white mt-2">Únete ahora</a>
-                    </p>
                 </div>
             </div>
         </div>

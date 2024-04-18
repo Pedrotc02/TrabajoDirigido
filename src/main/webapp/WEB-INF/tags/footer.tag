@@ -6,7 +6,7 @@
 
     <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item">
-            <a href="index.jsp" class="nav-link">Home</a>
+            <a href="<c:url value="/"/>" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
             <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>

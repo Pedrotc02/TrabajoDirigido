@@ -27,7 +27,7 @@
         <div class="col-md-7 col-lg-8 ml-300" style="margin-left: 300px">
             <h4 class="mb-3">Editar vehiculo</h4>
             <div class="flexbox-align mt-5">
-                <form:form class="needs-validation" method="post">
+                <form:form class="needs-validation" method="POST" modelAttribute="vehiculo">
                     <div class="row g-3">
 
                         <div class="col-sm-6">
@@ -37,9 +37,9 @@
                         </div>
 
                         <div class="col-sm-6">
-                            <form:label path="marcaModelo">Marca y Modelo</form:label>
-                            <form:input path="marcaModelo" class="form-control"/>
-                            <div><form:errors cssClass="form-text text-danger" path="marcaModelo"/></div>
+                            <form:label path="marca_modelo">Marca y Modelo</form:label>
+                            <form:input path="marca_modelo" class="form-control"/>
+                            <div><form:errors cssClass="form-text text-danger" path="marca_modelo"/></div>
                         </div>
 
                         <div class="col-sm-6">
@@ -49,9 +49,9 @@
                         </div>
 
                         <div class="col-6">
-                            <form:label path="anio">Año de Fabricación</form:label>
-                            <form:input path="anio" class="form-control"/>
-                            <div><form:errors cssClass="form-text text-danger" path="anio"/></div>
+                            <form:label path="anioMatriculacion">Año de Fabricación</form:label>
+                            <form:input path="anioMatriculacion" class="form-control"/>
+                            <div><form:errors cssClass="form-text text-danger" path="anioMatriculacion"/></div>
                         </div>
 
                         <div class="col-4">
@@ -63,7 +63,7 @@
                     </div>
 
                     <div class="col-lg-6 col-xxl-4 my-5 mx-auto d-flex">
-                        <a href="/index.jsp" class="d-block w-100 btn btn-danger btn-lg mx-1">Cancelar</a>
+                        <a href="listado" class="d-block w-100 btn btn-danger btn-lg mx-1">Cancelar</a>
                         <input type="submit" value="Guardar" class="d-block w-100 btn btn-primary btn-lg mx-1" />
                     </div>
 

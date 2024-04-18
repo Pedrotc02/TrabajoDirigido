@@ -1,5 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
+<%@taglib prefix="c" uri="jakarta.tags.core" %>
 <%--
   Created by IntelliJ IDEA.
   User: pedrotc
@@ -7,7 +8,7 @@
   Time: 12:22
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -16,7 +17,7 @@
     <meta charset="UTF-8">
     <%@include file="/WEB-INF/layout/bootstrapheader.jspf"%>
     <link rel="stylesheet" type="text/css" href="<c:url value='/css/disenoRegistrarVehiculo.css' />" />
-    <title>Página de inicio</title>
+    <title>Registro de vehiculo</title>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             <h4 class="mb-3">Datos del Vehiculo</h4>
             <div class="flexbox-align mt-5">
                 <form:errors path="vehiculo.*" cssClass="text-danger" element="div" />
-                <form:form class="needs-validation" method="post">
+                <form:form class="needs-validation" method="POST" modelAttribute="vehiculo">
                     <div class="row g-3">
 
                         <div class="col-sm-6">

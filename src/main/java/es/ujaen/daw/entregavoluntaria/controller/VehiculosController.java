@@ -2,8 +2,6 @@ package es.ujaen.daw.entregavoluntaria.controller;
 
 import es.ujaen.daw.entregavoluntaria.model.Vehiculo;
 import es.ujaen.daw.entregavoluntaria.model.dao.VehiculosDAO;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -18,7 +16,7 @@ import java.util.logging.Logger;
 
 
 @Controller
-@RequestMapping("/vehiculos")
+@RequestMapping("vehiculos")
 public class VehiculosController {
     @Autowired
     //@Qualifier("vehiculoDAOMap")

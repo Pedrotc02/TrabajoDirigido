@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página de inicio</title>
+<!--    <th:block th:include="/WEB-INF/layout/bootstrapheader.html"></th:block>-->
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/css/disenoInicio.css}" />-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/disenoInicio.css}" />
+</head>
+
+<body>
+<div th:replace="fragments/header"></div>
+
+<main>
+    <div class="container">
+        <div class="imagen cover-container d-flex w-100 h-100 p-2 mx-auto flex-column text-center">
+            <div class="px-2 mx-2">
+                <p class="lead texto">
+                    Con CitaMotorizada, olvídate de las llamadas al taller y de las largas esperas para conseguir una cita.
+                    Mantén tus vehículos en óptimas condiciones sin tener que preocuparte por gestionar citas o perder tiempo
+                    en interminables llamadas con el taller.
+                    Además, con CitaMotorizada, disfrutarás de un servicio personalizado adaptado a las necesidades específicas
+                    de cada vehículo que requiera atención en el taller.
+                </p>
+                <img th:src="@{/images/taller.jpg}" class="foto" />
+            </div>
+        </div>
+    </div>
+</main>
+
+<div th:replace="fragments/footer.html"></div>
+</body>
+
+</html>

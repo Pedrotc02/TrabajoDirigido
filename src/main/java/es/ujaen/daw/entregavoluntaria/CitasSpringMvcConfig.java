@@ -8,6 +8,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class CitasSpringMvcConfig implements WebMvcConfigurer {
 
     public void addViewControllers(ViewControllerRegistry registry){
-        registry.addViewController("/").setViewName("redirect:/index.jsp");
+        registry.addViewController("/").setViewName("index");
     }
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CitaMotorizada header</title>
+</head>
+
+<body>
+<header th:fragment="header" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <span class="fs-2">
+            <img th:src="@{/images/img.png}" width="90" alt="Logo" />
+            CitaMotorizada
+        </span>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li class="nav-link px-2"><a th:href="@{/}" class="nav-link">Home</a></li>
+        <li class="nav-link px-2"><a th:href="@{/vehiculos/registrar}" class="nav-link">Registrar vehículo</a></li>
+        <li class="nav-link px-2"><a th:href="@{/vehiculos/listado}" class="nav-link px-2">Vehículos registrados</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+        <!--
+        <a th:href="@{/loginUsuario}" class="btn btn-outline-primary me-2">Inicia Sesión</a>
+        <a th:href="@{/Usuario/registrarUsuario}" class="btn btn-primary me-2">Regístrate</a>
+        -->
+    </div>
+</header>
+</body>
+
+</html>
+
